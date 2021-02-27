@@ -1,0 +1,14 @@
+:host {
+  display: block;
+  padding: 24px;
+}
+
+.grid {
+  display: grid;
+  gap: 24px;
+  grid-template-columns: repeat(auto-fit, minmax(1fr, 600px));
+}
+
+mat-card {
+  text-align: center;
+}

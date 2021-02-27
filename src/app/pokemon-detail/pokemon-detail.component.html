@@ -1,0 +1,21 @@
+<mat-card *ngIf="pokemon" class="pokemon">
+  <img src="assets/images/{{pokemon.id | number:'3.0'}}.png" alt="{{pokemon.name}}">
+  <p>{{pokemon.name.japanese}}</p>
+  <p>{{pokemon.type | type}}</p>
+  <p>HP: {{pokemon.base['HP']}}</p>
+  <p>こうげき: {{pokemon.base['Attack']}}</p>
+  <p>ぼうぎょ: {{pokemon.base['Defense']}}</p>
+  <p>とくこう: {{pokemon.base['Sp. Attack']}}</p>
+  <p>とくぼう: {{pokemon.base['Sp. Defense']}}</p>
+  <p>すばやさ: {{pokemon.base['Speed']}}</p>
+
+  <canvas
+    baseChart
+    [datasets]="radarChartData"
+    [options]="radarChartOptions"
+    [labels]="radarChartLabels"
+    [chartType]="radarChartType"
+  >
+  </canvas>
+
+</mat-card>
