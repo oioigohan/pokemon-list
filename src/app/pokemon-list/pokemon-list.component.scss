@@ -4,9 +4,10 @@
 }
 
 .grid {
+  justify-content: center;
   display: grid;
   gap: 24px;
-  grid-template-columns: repeat(auto-fit, minmax(1fr, 600px));
+  grid-template-columns: repeat(auto-fit, 200px);
 }
 
 mat-card {
