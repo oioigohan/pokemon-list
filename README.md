@@ -3,3 +3,8 @@
 
 ## URL
 https://oioigohan.github.io/pokemon-list/
+
+## 今後の予定
+
+- 検索機能実装
+- ページネーションの実装
